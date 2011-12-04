@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- All Buttons -->
+    <style name="calc_button">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#ffffb5e4</item>
+        <item name="android:shadowColor">#ff420d35</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <!-- Number Buttons -->
+    <style name="number_button" parent="calc_button">
+        <item name="android:background">@drawable/buttonshape</item>
+    </style>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:state_pressed="true" >
+            <style name="operator_button" parent="calc_button">
+                <item name="android:background">@drawable/buttonshape_active</item>
+            </style>
+        </item>
+    </selector>
+
+    <!-- Operator Buttons -->
+    <style name="operator_button" parent="calc_button">
+        <item name="android:background">@drawable/buttonshape_active</item>
+    </style>
+
+
+    <!-- Clear Buttons -->
+    <style name="clear_button" parent="calc_button">
+        <item name="android:background">@drawable/buttonshape_active</item>
+    </style>
+
+
+    <!-- Screen -->
+    <style name="calculator_screen">
+        <item name="android:clickable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_marginBottom">8dip</item>
+        <item name="android:padding">6dip</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLength">16</item>
+        <item name="android:background">@drawable/calculator_screen</item>
+    </style>
+
+    <!-- Background -->
+    <style name="calculator_background">
+        <item name="android:background">#FFCCE0</item>
+    </style>
+
+</resources>

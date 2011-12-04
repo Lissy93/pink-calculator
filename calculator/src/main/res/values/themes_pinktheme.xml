@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="PinkTheme" parent="@style/_PinkTheme"/>
+
+  <style name="_PinkTheme" parent="Theme.AppCompat.Light">
+
+    <item name="android:editTextStyle">@style/EditTextPinkTheme</item>
+
+    <item name="android:buttonStyle">@style/ButtonPinkTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonPinkTheme</item>
+
+  </style>
+
+</resources>
